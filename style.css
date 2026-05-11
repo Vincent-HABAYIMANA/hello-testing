@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 40px 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background: #00bcd4;
+  color: white;
+  border-radius: 5px;
+}
+
+section {
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Dark theme */
+.dark {
+  background: #111;
+  color: white;
+}
+
+.dark .card {
+  background: #222;
+}
