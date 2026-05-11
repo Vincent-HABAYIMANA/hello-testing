@@ -1,5 +1,5 @@
-export default function handler(req, res) {
-  res.status(200).json({
+export async function GET() {
+  return Response.json({
     success: true,
     message: "Hello from Vercel!",
     time: new Date().toISOString(),
