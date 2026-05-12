@@ -1,41 +1,96 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background: #222;
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* HERO */
+.hero {
+  background: #111;
   color: white;
+  padding: 60px 20px;
+}
+
+/* SECTIONS */
+.section {
   padding: 40px 20px;
 }
 
+/* GRID (mobile-first) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* BUTTONS */
 button {
   margin-top: 10px;
   padding: 10px 15px;
   border: none;
-  cursor: pointer;
   background: #00bcd4;
   color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* LINKS */
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
   border-radius: 5px;
 }
 
-section {
-  padding: 30px;
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
 }
 
-.card {
-  background: white;
-  margin: 10px auto;
-  padding: 15px;
-  width: 60%;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-/* Dark theme */
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* DARK MODE */
 .dark {
   background: #111;
   color: white;
@@ -43,32 +98,30 @@ section {
 
 .dark .card {
   background: #222;
-}
-
-.projects {
-  padding: 40px;
-}
-
-.card {
-  background: #f4f4f4;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.card a,
-.github a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
   color: white;
-  background: #333;
-  padding: 10px 15px;
-  border-radius: 5px;
 }
 
-.card a:hover,
-.github a:hover {
-  background: #555;
+/* ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+}
+
+.delay {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }

@@ -1,85 +1,79 @@
-# Updated Portfolio Code
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Vincent Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <header>
-    <h1>Hi, I'm Vincent</h1>
-    <p>Frontend Developer | Designer | Creator</p>
+  <!-- HERO -->
+  <header class="hero">
+    <h1 class="fade-in">Hi, I'm Vincent </h1>
+    <p class="fade-in delay">Backend Developer | Network engineer | Arduino Developer</p>
+
     <button onclick="changeTheme()">Toggle Theme</button>
   </header>
 
-  <section class="about">
+  <!-- ABOUT -->
+  <section class="section fade-in">
     <h2>About Me</h2>
     <p>
-      I build simple and clean web applications using HTML, CSS, JavaScript, and modern web technologies.
+      I build clean, fast, and responsive web applications using modern web technologies.
     </p>
   </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2 class="fade-in">Projects</h2>
 
-    <div class="card">
-      <h3>Ikimina Digital App</h3>
-      <p>
-        A digital savings group mobile application built with Flutter for managing members, contributions, loans, and reports.
-      </p>
-      <a href="https://github.com/PAZZO123/Ikimina_Digital_Mobile_App" target="_blank">
-        View Project
-      </a>
+    <div class="grid">
+
+      <div class="card fade-in">
+        <h3>Ikimina Digital App</h3>
+        <p>Flutter app for managing savings groups.</p>
+        <a href="https://github.com/PAZZO123/Ikimina_Digital_Mobile_App" target="_blank">View</a>
+      </div>
+
+      <div class="card fade-in">
+        <h3>E-Voting System</h3>
+        <p>Secure Java-based voting system.</p>
+        <a href="https://github.com/Vincent-HABAYIMANA/" target="_blank">View</a>
+      </div>
+
+      <div class="card fade-in">
+        <h3>Fitrack</h3>
+        <p>Protect your body daily with our platform.</p>
+        <a href="https://vincent-habayimana.github.io/fitrack/" target="_blank">View</a>
+      </div>
+
+      <div class="card fade-in">
+        <h3>BMI Calculator</h3>
+        <p>Flask web health calculator app.</p>
+        <a href="https://github.com/Vincent-HABAYIMANA/vincent120-bmi-calculator" target="_blank">View</a>
+      </div>
+
     </div>
-
-    <div class="card">
-      <h3>E-Voting System</h3>
-      <p>
-        A Java-based electronic voting system designed for local elections and organizations with secure voting and result management.
-      </p>
-      <a href="https://github.com/YOUR_USERNAME/e-voting-system" target="_blank">
-        View Project
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Sentiment Analysis Dashboard</h3>
-      <p>
-        A C++ sentiment analysis system using Binary Search Trees (BST) to analyze, rank, and manage user comments.
-      </p>
-      <a href="https://vincent-habayimana.github.io/fitrack/" target="_blank">
-        View Project
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>BMI Calculator</h3>
-      <p>
-        A Flask web application that calculates Body Mass Index and provides health feedback based on user input.
-      </p>
-      <a href="https://github.com/Vincent-HABAYIMANA/vincent120-bmi-calculator" target="_blank">
-        View Project
-      </a>
-    </div>
-
   </section>
 
-  <section class="github">
-    <h2>GitHub Account</h2>
-    <p>
-      Check out more of my projects and open-source work on GitHub.
-    </p>
+  <!-- CONTACT -->
+  <section class="section fade-in">
+    <h2>Contact Me</h2>
 
-    <a href="https://github.com/Vincent-HABAYIMANA" target="_blank">
-      Visit My GitHub
-    </a>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formStatus"></p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Vincent</p>
   </footer>
