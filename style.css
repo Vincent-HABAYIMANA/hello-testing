@@ -44,3 +44,31 @@ section {
 .dark .card {
   background: #222;
 }
+
+.projects {
+  padding: 40px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card a,
+.github a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.card a:hover,
+.github a:hover {
+  background: #555;
+}
